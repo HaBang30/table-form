@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE MAKE WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesomne/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       form {
+           border: 20px solid rgb(0, 255, 234);
+           width: 60%;
+           height: 300px;
+           margin:auto;
+           margin-top: 40px;
+           border-top-width: 15px;
+          
+       }
+       h2 {
+           text-align: center;
+           background-color:orange;
+           padding: 5px;
+           color: white;
+           margin-top: 5px;
+       }
+        table {
+          padding-left: 25%;
+       }
+        td {
+            padding-left: 15px; 
+            color: orange;  
+       }
+       th {
+           text-align: right;
+           padding-left: 15px;
+           color: blue;
+       }
+        button:hover {
+           color: red;
+           font-weight: bold;
+       }
+    
+    </style>
+</head>
+<body>
+    <form action="https://tiki.com/" method="get">
+        <h2>SỞ THÍCH CỦA BẠN</h2> <br> 
+        <table >
+            <tr>
+                <th>Họ và tên</th>
+                <th><input type="textbox" name="yourname" value="" style="border: inset;"></th>
+            </tr>
+            <tr></tr> 
+            <tr></tr>
+            <tr>
+                <th>Email</th>
+                <th><input type="textbox" name="youremail" value="" style=" border: inset;"></th>
+            </tr>
+            <tr></tr>  <tr></tr>
+            <tr>
+                <th>Sở thích</th>
+                <td><input  type="checkbox" name="hoby" value="sport"> Thể thao</td>
+                <td><input  type="checkbox"  name="hoby" value="music"> Âm nhạc</td>
+                <td><input  type="checkbox"  name="hoby" value="read books"> Đọc sách</td>
+            </tr>
+            <tr></tr>  <tr></tr>
+            <tr>
+                <th></th>
+                <td><input  type="checkbox" name="hoby" value="Website"> Lướt website</td>
+                <td><input  type="checkbox"  name="hoby" value="Game"> Chơi game</td>
+                <td><input  type="checkbox"  name="hoby" value="actor"> Diễn viên</td>
+            </tr>
+            <tr></tr>  <tr></tr>
+            <tr>
+                <th></th>
+                <td><input  type="checkbox" name="hoby" value="travel"> Du lịch</td>
+            </tr> 
+            <tr></tr>  <tr></tr>  <tr></tr>
+            <tr>
+                <th></th>
+                <td>
+                    <button style="border: 1px solid #dddddd; background: #dddddd; width: 80px; height: 30px;"  type="button" name="bt" value="Register">Đăng Ký</button>
+                    <button style="border: 1px solid #dddddd; background: #dddddd; width: 80px; height: 30px;"  type="button" name="bt" value="reset">Nhập lại</button>
+                </td>
+            </tr>   
+        </table>
+    </form>
+    <form action="https://www.google.com.vn/" method="get">
+        Ngày, tháng, năm : <br>
+        <input style="width: 200px; height: 30px;" type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+        <br> <label for="Date of Birth">
+            Enter the Date: <br>
+            <input type="date" name="date">
+        </label>
+        <input type="date" name="date"> <br>
+        <input type="month" name="month"> <br>
+        <input type="email" name="email"> <br>
+        <input type="color" name="color"> <br>
+        <input type="number" name="number"> <br>
+        <input type="datetime-local" name="datetime-local"> <br>
+        <input type="datetime" name="datetime"> <br>
+        <input type="range" name="range"> <br>
+        <input type="search" name="search"> <br>
+        <input type="tel" name="tel"> <br>
+        <input type="url" name="url"> <br>
+        <input type="week" name="week"> <br>
+    </form>
+    <div class="container">
+        <form action="" id="loginForm">
+            <h2>Login</h2>
+            <p><label for="Username">Username</label> <input type="text" name="username" id="username" placeholder="username"></p>
+            <p><label for="password">password</label> <input type="password" name="password" id="password" placeholder="password"><input type="button" id="showPassword" value="show" class="button"></p>
+            <p><input type="submit" value="Login" class="button"></p>
+            <p><input type="file" name="anh"></p>
+        </form>
+    </div>
+    <div class="container">
+        <input type="password" placeholder="Nhập mật khẩu" required>
+        <span class="show-btn"><i class="fas fa-eye"></i></span>
+    </div>
+</body>
+</html>
